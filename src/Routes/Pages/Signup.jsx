@@ -21,7 +21,7 @@ const SignUp = () => {
         return (
             () => setIsLoginPage(false)
         )
-    }, [])
+    }, [setIsLoginPage])
     const handleInputChange = (e) => {
         setInput({ ...input, [e.target.name]: e.target.value })
         // console.log(input)

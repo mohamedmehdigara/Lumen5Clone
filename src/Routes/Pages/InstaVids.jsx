@@ -4,12 +4,16 @@ import { DashNav } from "../../Components/DashNav"
 import { SideNav } from "../../Components/SideNav"
 
 import { AuthContext } from "../../Context/AuthContext"
+
+
 export const Instavideos=()=>{
-    const {setIsLoginPage}=useContext(AuthContext)
-    useEffect(()=>{
-        setIsLoginPage(true)
-        return(()=>setIsLoginPage(false))
-    },[])
+ 
+
+  const {setIsLoginPage}=useContext(AuthContext)
+  useEffect(()=>{
+      setIsLoginPage(true)
+      return(()=>setIsLoginPage(false))
+  },[setIsLoginPage])
    
     return(<Box >
             <DashNav/>

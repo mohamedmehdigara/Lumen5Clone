@@ -9,7 +9,7 @@ export const Savedtemplates=()=>{
     useEffect(()=>{
         setIsLoginPage(true)
         return(()=>setIsLoginPage(false))
-    },[])
+    },[setIsLoginPage])
    
     return(<Box>
             <DashNav/>

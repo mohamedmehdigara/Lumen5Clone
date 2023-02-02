@@ -10,7 +10,7 @@ export const Dashboard=()=>{
     useEffect(()=>{
         setIsLoginPage(true)
         return(()=>setIsLoginPage(false))
-    },[])
+    },[setIsLoginPage])
    
     return(<Box>
             <DashNav/>
